@@ -18,6 +18,11 @@ class NoteController extends Controller
     }
 
     public function onNoteCreate(){
+        request()->validate([
+            'title' => 'required',
+            'body' => 'required'
+        ]);
+
         $note=new \App\Note();
         $note->title=request('title');
         $note->body=request('body');
