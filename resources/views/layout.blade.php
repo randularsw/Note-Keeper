@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-{{--    <link href="album.css" rel="stylesheet">--}}
+    {{--    <link href="album.css" rel="stylesheet">--}}
 </head>
 
 <body>
@@ -38,7 +38,7 @@
     </div>
     <div class="navbar navbar-dark bg-dark box-shadow">
         <div class="container d-flex justify-content-between">
-            <a href="#" class="navbar-brand d-flex align-items-center">
+            <a href="/" class="navbar-brand d-flex align-items-center">
                 <strong>Note Keeper</strong>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,43 +48,8 @@
     </div>
 </header>
 
-<main role="main">
-
-    <section class="jumbotron text-center">
-        <div class="container">
-            <h1 class="jumbotron-heading">Keep Your Notes</h1>
-            <p class="lead text-muted">You can store everything from personal moments to business projects, and know they’re always safe, always secure, and ready whenever you need them.</p>
-            <p>
-                <a href="#" class="btn btn-primary my-2">Add New Note</a>
-                <a href="#" class="btn btn-secondary my-2">Give Feedback</a>
-            </p>
-        </div>
-    </section>
-
-    <div class="album py-5 bg-light">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <div class="card-body">
-                            <large><b><p>Here is the title</p></b></large>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
+<main role="main" class="container">
+    @yield('content')
 </main>
 
 <footer class="text-muted">
